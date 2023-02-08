@@ -350,7 +350,7 @@ int main(int argc, char * argv[]) {
     ros::Time end_scan_time;
     double scan_duration;
 
-    
+    angle_compensate_multiple = 4;
     while (ros::ok()) {
         sl_lidar_response_measurement_node_hq_t nodes[8192];
         size_t   count = _countof(nodes);
